@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GetLinks-node</title>
+    <style>
+        * { box-sizing: border-box }
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 10px;
+        }
+        table {
+            table-layout: fixed;
+            border-collapse:collapse;
+        }
+        td, th {
+            border: 1px solid #cecece;
+            padding: 0px 5px; 
+        }
+        td:first-child {
+            padding: 3px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/getuser" method="GET">
+            <input type="text" placeholder="Enter github name" name="name">
+            <input type="submit">
+        </form>
+        {{{body}}}
+    </div>
+</body>
+</html>

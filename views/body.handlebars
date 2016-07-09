@@ -1,0 +1,17 @@
+
+{{ title.name }}
+
+    <table>
+        <tr>
+            <th>Avatar</th>
+            <th>Login</th>
+            <th>Url</th>
+        </tr>
+        {{#each item}}
+            <tr>
+                <td><img src="{{ avatar_url }}" alt="avatar" width="60"></td>
+                <td>{{ login }}</td>
+                <td>{{ url }}</td>
+            </tr>
+        {{/each}}
+    </table>
